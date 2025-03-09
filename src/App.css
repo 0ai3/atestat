@@ -1,3 +1,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.Btn {
+    background-color: #007bff; 
+    color: white; 
+    padding: 10px 20px;
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  .Btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .Btn:active {
+    background-color: #004494;
+    transform: scale(0.95);
+  }
+  .textbox {
+    width: 100%; /* Full width */
+    max-width: 400px; /* Limit maximum width */
+    padding: 10px; /* Inner spacing */
+    border: 2px solid #007bff; /* Blue border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Text size */
+    outline: none; /* Remove default focus outline */
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+  }
+  
+  /* When user clicks inside */
+  .textbox:focus {
+    border-color: #0056b3; /* Darker blue border */
+    box-shadow: 0 0 8px rgba(0, 91, 187, 0.5); /* Glowing effect */
+  }
+  
