@@ -1,0 +1,502 @@
+[
+	{
+		"id": 1,
+		"title": "The Shawshank Redemption",
+		"year": 1994,
+		"genre": "Drama",
+		"director": "Frank Darabont",
+		"rating": 9.3,
+		"type": "Movie",
+		"image": ""
+	},
+	{
+		"id": 2,
+		"title": "The Godfather",
+		"year": 1972,
+		"genre": "Crime",
+		"director": "Francis Ford Coppola",
+		"rating": 9.2,
+		"type": "Movie",
+		"image": ""
+	},
+	{
+		"id": 3,
+		"title": "The Dark Knight",
+		"year": 2008,
+		"genre": "Action",
+		"director": "Christopher Nolan",
+		"rating": 9.0,
+		"type": "Movie",
+		"image": ""
+	},
+	{
+		"id": 4,
+		"title": "Breaking Bad",
+		"year": 2008,
+		"genre": "Crime",
+		"director": "Vince Gilligan",
+		"rating": 9.5,
+		"type": "Series",
+		"image": "./images/Breaking_Bad.jpg"
+	},
+	{
+		"id": 5,
+		"title": "Game of Thrones",
+		"year": 2011,
+		"genre": "Fantasy",
+		"director": "David Benioff, D. B. Weiss",
+		"rating": 9.2,
+		"type": "Series",
+		"image": "./images/Game_Of_Thrones.jpg"
+	},
+	{
+		"id": 6,
+		"title": "Stranger Things",
+		"year": 2016,
+		"genre": "Sci-Fi",
+		"director": "The Duffer Brothers",
+		"rating": 8.7,
+		"type": "Series",
+		"image": ""
+	},
+	{
+		"id": 7,
+		"title": "The Witcher",
+		"year": 2019,
+		"genre": "Fantasy",
+		"director": "Lauren Schmidt Hissrich",
+		"rating": 8.2,
+		"type": "Series",
+		"image": ""
+	},
+	{
+		"id": 8,
+		"title": "The Matrix",
+		"year": 1999,
+		"genre": "Sci-Fi",
+		"director": "Lana Wachowski, Lilly Wachowski",
+		"rating": 8.7,
+		"type": "Movie",
+		"image": ""
+	},
+	{
+		"id": 9,
+		"title": "Interstellar",
+		"year": 2014,
+		"genre": "Sci-Fi",
+		"director": "Christopher Nolan",
+		"rating": 8.6,
+		"type": "Movie",
+		"image": ""
+	},
+	{
+		"id": 10,
+		"title": "Friends",
+		"year": 1994,
+		"genre": "Comedy",
+		"director": "David Crane, Marta Kauffman",
+		"rating": 8.9,
+		"type": "Series",
+		"image": ""
+	},
+	{
+		"id": 11,
+		"title": "The Office",
+		"year": 2005,
+		"genre": "Comedy",
+		"director": "Greg Daniels",
+		"rating": 9.0,
+		"type": "Series",
+		"image": ""
+	},
+	{
+		"id": 12,
+		"title": "Sherlock",
+		"year": 2010,
+		"genre": "Crime",
+		"director": "Steven Moffat, Mark Gatiss",
+		"rating": 9.1,
+		"type": "Series",
+		"image": ""
+	},
+	{
+		"id": 13,
+		"title": "Chernobyl",
+		"year": 2019,
+		"genre": "Drama",
+		"director": "Johan Renck",
+		"rating": 9.4,
+		"type": "Series",
+		"image": ""
+	},
+	{
+		"id": 14,
+		"title": "The Boys",
+		"year": 2019,
+		"genre": "Action",
+		"director": "Eric Kripke",
+		"rating": 8.7,
+		"type": "Series",
+		"image": ""
+	},
+	{
+		"id": 15,
+		"title": "Squid Game",
+		"year": 2021,
+		"genre": "Thriller",
+		"director": "Hwang Dong-hyuk",
+		"rating": 8.0,
+		"type": "Series",
+		"image": ""
+	},
+	{
+		"id": 16,
+		"title": "The Last of Us",
+		"year": 2023,
+		"genre": "Drama",
+		"director": "Craig Mazin, Neil Druckmann",
+		"rating": 8.9,
+		"type": "Series",
+		"image": ""
+	},
+	{
+		"id": 17,
+		"title": "Dune: Part One",
+		"year": 2021,
+		"genre": "Sci-Fi",
+		"director": "Denis Villeneuve",
+		"rating": 8.3,
+		"type": "Movie",
+		"image": ""
+	},
+	{
+		"id": 18,
+		"title": "Better Call Saul",
+		"year": 2015,
+		"genre": "Crime",
+		"director": "Vince Gilligan, Peter Gould",
+		"rating": 9.0,
+		"type": "Series",
+		"image": ""
+	},
+	{
+		"id": 19,
+		"title": "Avatar",
+		"year": 2009,
+		"genre": "Sci-Fi",
+		"director": "James Cameron",
+		"rating": 7.8,
+		"type": "Movie",
+		"image": ""
+	},
+	{
+		"id": 20,
+		"title": "Joker",
+		"year": 2019,
+		"genre": "Crime",
+		"director": "Todd Phillips",
+		"rating": 8.4,
+		"type": "Movie",
+		"image": ""
+	},
+	{
+		"id": 21,
+		"title": "Narcos",
+		"year": 2015,
+		"genre": "Crime",
+		"director": "Carlo Bernard, Chris Brancato",
+		"rating": 8.8,
+		"type": "Series",
+		"image": ""
+	},
+	{
+		"id": 22,
+		"title": "Loki",
+		"year": 2021,
+		"genre": "Sci-Fi",
+		"director": "Kate Herron",
+		"rating": 8.2,
+		"type": "Series",
+		"image": ""
+	},
+	{
+		"id": 23,
+		"title": "The Mandalorian",
+		"year": 2019,
+		"genre": "Sci-Fi",
+		"director": "Jon Favreau",
+		"rating": 8.7,
+		"type": "Series",
+		"image": ""
+	},
+	{
+		"id": 24,
+		"title": "The Walking Dead",
+		"year": 2010,
+		"genre": "Horror",
+		"director": "Frank Darabont",
+		"rating": 8.1,
+		"type": "Series",
+		"image": ""
+	},
+	{
+		"id": 25,
+		"title": "Titanic",
+		"year": 1997,
+		"genre": "Drama",
+		"director": "James Cameron",
+		"rating": 7.9,
+		"type": "Movie",
+		"image": ""
+	},
+	{
+		"id": 26,
+		"title": "Inception",
+		"year": 2010,
+		"genre": "Sci-Fi",
+		"director": "Christopher Nolan",
+		"rating": 8.8,
+		"type": "Movie",
+		"image": ""
+	},
+	{
+		"id": 27,
+		"title": "Naruto",
+		"year": 2002,
+		"genre": "Animation",
+		"director": "Masashi Kishimoto",
+		"rating": 8.3,
+		"type": "Series",
+		"image": ""
+	},
+	{
+		"id": 28,
+		"title": "Death Note",
+		"year": 2006,
+		"genre": "Animation",
+		"director": "Tetsurō Araki",
+		"rating": 9.0,
+		"type": "Series",
+		"image": ""
+	},
+	{
+		"id": 29,
+		"title": "One Piece",
+		"year": 1999,
+		"genre": "Animation",
+		"director": "Eiichiro Oda",
+		"rating": 8.8,
+		"type": "Series",
+		"image": ""
+	},
+	{
+		"id": 30,
+		"title": "Django Unchained",
+		"year": 2012,
+		"genre": "Western",
+		"director": "Quentin Tarantino",
+		"rating": 8.4,
+		"type": "Movie",
+		"image": ""
+	},
+	{
+		"id": 31,
+		"title": "The Crown",
+		"year": 2016,
+		"genre": "Biography",
+		"director": "Peter Morgan",
+		"rating": 8.7,
+		"type": "Series",
+		"image": ""
+	},
+	{
+		"id": 32,
+		"title": "The Social Network",
+		"year": 2010,
+		"genre": "Biography",
+		"director": "David Fincher",
+		"rating": 7.7,
+		"type": "Movie",
+		"image": ""
+	},
+	{
+		"id": 33,
+		"title": "The Queen's Gambit",
+		"year": 2020,
+		"genre": "Drama",
+		"director": "Scott Frank",
+		"rating": 8.6,
+		"type": "Series",
+		"image": ""
+	},
+	{
+		"id": 34,
+		"title": "The Big Bang Theory",
+		"year": 2007,
+		"genre": "Comedy",
+		"director": "Chuck Lorre, Bill Prady",
+		"rating": 8.1,
+		"type": "Series",
+		"image": ""
+	},
+	{
+		"id": 35,
+		"title": "Gladiator",
+		"year": 2000,
+		"genre": "Action",
+		"director": "Ridley Scott",
+		"rating": 8.5,
+		"type": "Movie",
+		"image": ""
+	},
+	{
+		"id": 36,
+		"title": "The Simpsons",
+		"year": 1989,
+		"genre": "Animation, Comedy",
+		"director": "Matt Groening",
+		"rating": 8.7,
+		"type": "Series",
+		"image": ""
+	},
+	{
+		"id": 37,
+		"title": "The Good Place",
+		"year": 2016,
+		"genre": "Comedy, Fantasy",
+		"director": "Michael Schur",
+		"rating": 8.2,
+		"type": "Series",
+		"image": ""
+	},
+	{
+		"id": 38,
+		"title": "The Revenant",
+		"year": 2015,
+		"genre": "Drama, Adventure",
+		"director": "Alejandro González Iñárritu",
+		"rating": 8.0,
+		"type": "Movie",
+		"image": ""
+	},
+	{
+		"id": 39,
+		"title": "The Handmaid's Tale",
+		"year": 2017,
+		"genre": "Drama, Sci-Fi",
+		"director": "Bruce Miller",
+		"rating": 8.4,
+		"type": "Series",
+		"image": ""
+	},
+	{
+		"id": 40,
+		"title": "The Irishman",
+		"year": 2019,
+		"genre": "Crime, Drama",
+		"director": "Martin Scorsese",
+		"rating": 7.8,
+		"type": "Movie",
+		"image": ""
+	},
+	{
+		"id": 41,
+		"title": "Fargo",
+		"year": 2014,
+		"genre": "Crime, Drama",
+		"director": "Noah Hawley",
+		"rating": 8.9,
+		"type": "Series",
+		"image": ""
+	},
+	{
+		"id": 42,
+		"title": "The Marvelous Mrs. Maisel",
+		"year": 2017,
+		"genre": "Comedy, Drama",
+		"director": "Amy Sherman-Palladino",
+		"rating": 8.7,
+		"type": "Series",
+		"image": ""
+	},
+	{
+		"id": 43,
+		"title": "The Pursuit of Happyness",
+		"year": 2006,
+		"genre": "Biography, Drama",
+		"director": "Gabriele Muccino",
+		"rating": 8.0,
+		"type": "Movie",
+		"image": ""
+	},
+	{
+		"id": 44,
+		"title": "The Sopranos",
+		"year": 1999,
+		"genre": "Crime, Drama",
+		"director": "David Chase",
+		"rating": 9.2,
+		"type": "Series",
+		"image": ""
+	},
+	{
+		"id": 45,
+		"title": "The Godfather: Part II",
+		"year": 1974,
+		"genre": "Crime, Drama",
+		"director": "Francis Ford Coppola",
+		"rating": 9.0,
+		"type": "Movie",
+		"image": ""
+	},
+	{
+		"id": 46,
+		"title": "The Silence of the Lambs",
+		"year": 1991,
+		"genre": "Crime, Drama, Thriller",
+		"director": "Jonathan Demme",
+		"rating": 8.6,
+		"type": "Movie",
+		"image": ""
+	},
+	{
+		"id": 47,
+		"title": "The West Wing",
+		"year": 1999,
+		"genre": "Drama",
+		"director": "Aaron Sorkin",
+		"rating": 8.7,
+		"type": "Series",
+		"image": ""
+	},
+	{
+		"id": 48,
+		"title": "The Expanse",
+		"year": 2015,
+		"genre": "Drama, Mystery, Sci-Fi",
+		"director": "Mark Fergus, Hawk Ostby",
+		"rating": 8.5,
+		"type": "Series",
+		"image": ""
+	},
+	{
+		"id": 49,
+		"title": "The Shape of Water",
+		"year": 2017,
+		"genre": "Adventure, Drama, Fantasy",
+		"director": "Guillermo del Toro",
+		"rating": 7.3,
+		"type": "Movie",
+		"image": ""
+	},
+	{
+		"id": 50,
+		"title": "The Umbrella Academy",
+		"year": 2019,
+		"genre": "Action, Adventure, Comedy",
+		"director": "Steve Blackman",
+		"rating": 8.0,
+		"type": "Series",
+		"image": ""
+	}
+]
