@@ -15,9 +15,12 @@ function App() {
       <Route path="/Login" element={<Login />} />
       <Route path="/Register" element={<Register />} />
       <Route path="*" element={<Nav />} />
-       <Route path="/" element={<MainPage />} />
+       
     </Routes>
   </BrowserRouter>
+  // <MainPage/>
+  // <MovieCarousel/>
+  // <SeriesCarousel/>
   // <div>
   //  <Login/>
   //  <Register/>
