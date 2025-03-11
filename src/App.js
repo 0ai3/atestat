@@ -6,20 +6,23 @@ import Nav from "./Components/Nav";
 import Card from "./Components/Card";
 import MovieCarousel from "./Components/MovieCarousel";
 import SeriesCarousel from "./Components/SeriesCarousel";
+import MainPage from "./Components/mainPage";
 
 function App() {
   return (
-  //   <BrowserRouter>
-  //   <Routes>
-  //     <Route path="/Login" element={<Login />} />
-  //     <Route path="/Register" element={<Register />} />
-  //     <Route path="*" element={<Nav />} 
-  //       Route path="/" element={<MovieCarousel/>} />
-      
-  //     />
-  //   </Routes>
-  // </BrowserRouter>
-   <SeriesCarousel/>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/Login" element={<Login />} />
+      <Route path="/Register" element={<Register />} />
+      <Route path="*" element={<Nav />} />
+       <Route path="/" element={<MainPage />} />
+    </Routes>
+  </BrowserRouter>
+  // <div>
+  //  <Login/>
+  //  <Register/>
+  // </div>
+
   )
 }
 export default App;
