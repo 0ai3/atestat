@@ -7,6 +7,7 @@ import Card from "./Components/Card";
 import MovieCarousel from "./Components/MovieCarousel";
 import SeriesCarousel from "./Components/SeriesCarousel";
 import MainPage from "./Components/mainPage";
+import Profile from "./Components/Profile";
 
 function App() {
   return (
@@ -14,8 +15,12 @@ function App() {
     <Routes>
       <Route path="/Login" element={<Login />} />
       <Route path="/Register" element={<Register />} />
-      <Route path="*" element={<Nav />} />
-       
+      <Route path="/" element={<Nav />} >
+        <Route index element={<MainPage />} /> 
+        <Route path="/Profile" element={<Profile/>} />
+      </Route>
+
+     
     </Routes>
   </BrowserRouter>
   // <MainPage/>
