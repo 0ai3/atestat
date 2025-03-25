@@ -1,5 +1,3 @@
-import React from "react";
-
 function Card(props) {
 	return (
 		<div className="min-w-[400px] rounded overflow-hidden shadow-lg flex justify-center flex-col items-center">
