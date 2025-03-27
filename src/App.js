@@ -23,6 +23,8 @@ function App() {
         <Route index element={<MainPage />} /> 
         <Route index element={<Thumbnail />} />
         <Route path="profile" element={<Profile/>} />
+        <Route path="movies" element={<MovieCarousel/>}/>
+        <Route path="series" element={<SeriesCarousel/>}/>
       </Route>
     </Routes>
   </BrowserRouter>

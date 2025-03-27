@@ -11,7 +11,7 @@ function MovieCarousel() {
 	}, []);
 	return (
 		<div className="relative">
-    <div className="overflow-x-scroll scrollbar-hide whitespace-nowrap flex space-x-4 p-4">
+    <div className="overflow-x-scroll [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none'] whitespace-nowrap flex space-x-4 p-4">
         {movies
             .filter((movie) => movie.type === "Movie")
             .map((movie) => (

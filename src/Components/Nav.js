@@ -25,8 +25,8 @@ function Nav() {
 	}, []);
 
 	return (
-		<div className="flex flex-col min-h-screen  w-full">
-			<div className="flex flex-1">
+		<div className="flex flex-col min-h-screen  w-full ">
+			<div className="flex flex-1 ">
 				<aside className="w-20 h-screen bg-gray-900 text-white flex flex-col fixed">
 					<img 
 					src="/images/placeholderLogo.png" //needs to be a 1:1 ratio image (eu am scris asta gen da mi mai usor sa scriu pe engleza razvan)
@@ -128,7 +128,7 @@ function Nav() {
 				</aside>
 
 				<div className="flex-1 flex flex-col ml-20">
-					<nav className="flex justify-between items-center bg-gray-800 text-white w-full py-5 px-6 max-h-[80px]">
+					<nav className="flex justify-between items-center bg-gray-800 text-white w-full py-5 px-6 max-h-[80px] fixed top-0 mb-20">
 						<ul className="flex w-full justify-between items-center">
 							<li>
 								<h1>NUme</h1>
@@ -171,11 +171,11 @@ function Nav() {
 						</ul>
 					</nav>
 
-					<main className="flex-1">
+					<main className="flex-1 max-h-[calc(100vh-80px)] overflow-y-auto mt-20">
 						<Outlet />
 					</main>
 
-					<footer className="bg-gray-800 text-white py-4 px-6 text-center">
+					<footer className="bg-gray-800 text-white py-4 px-6 text-center fixed bottom-0 w-full">
 						<p>
 							© {new Date().getFullYear()} NUme. All rights reserved.
 						</p>

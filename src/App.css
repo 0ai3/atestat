@@ -13,9 +13,19 @@
     cursor: pointer;
     transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
   }
+  .badge {
+    @apply inline-block rounded-full px-3 py-1 text-sm font-semibold text-center;
+  }
   body{
-    background-color: #1f2937;
+    background-color: #374151 ;
     color: white;
+  }
+  *{
+-ms-overflow-style:'none';
+    scrollbar-width:'none'
+  }
+  *::-webkit-scrollbar {
+    display: none;
   }
   .Btn:hover {
     background-color: #0056b3;
