@@ -13,7 +13,10 @@
     cursor: pointer;
     transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
   }
-  
+  body{
+    background-color: #1f2937;
+    color: white;
+  }
   .Btn:hover {
     background-color: #0056b3;
     transform: scale(1.05);

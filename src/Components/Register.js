@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { auth, db } from "../firebase";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
@@ -13,91 +12,110 @@ function Register() {
     const [confirmPassword, setConfirmPassword] = useState("");
     const [error, setError] = useState("");
     const navigate = useNavigate();
+    const userImage = "Sample_User_Icon.png";
 
     const handleSubmit = async (e) => {
-      e.preventDefault();
-  
-      if (password !== confirmPassword) {
-          setError("Passwords do not match");
-          return;
-      }
-  
-      try {
-          // Create user
-          const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-          const user = userCredential.user;
-          console.log(1)
-          // Update display name
-          await updateProfile(user, { displayName: username });
-          console.log(2)
-          // Store username in Firestore
-          await setDoc(doc(db, "users", user.uid), {
-              username,
-              email,
-          });
-          console.log(3)
-          alert("User registered successfully!"); // Trigger alert here
-          navigate("/"); // Redirect after success
-      } catch (err) {
-          setError(err.message);
-      }
-  };
+        e.preventDefault();
+        
+        if (password !== confirmPassword) {
+            setError("Passwords do not match");
+            return;
+        }
+        
+        try {
+            // Create user
+            const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+            const user = userCredential.user;
+            
+            // Update display name
+            await updateProfile(user, { displayName: username });
+            
+            // Store username in Firestore
+            await setDoc(doc(db, "users", user.uid), {
+                username,
+                email,
+                photoURL: userImage,
+            });
+            
+            alert("User registered successfully!");
+            navigate("/");
+        } catch (err) {
+            setError(err.message);
+        }
+    };
   
     return (
-        <div className="h-screen bg-gray-200">
-            <div className="flex flex-row justify-center items-center h-screen">
-                <div className="flex flex-col justify-evenly items-center bg-white p-10 rounded-lg shadow-lg mx-auto">
-                    <form onSubmit={handleSubmit} className="flex flex-col justify-center items-center">
-                        <h1 className="text-3xl p-2 font-weight-normal flex justify-center">Create an Account</h1>
-
+        <div className="min-h-screen bg-gray-700 flex items-center justify-center">
+            <div className="bg-gray-800 rounded-xl shadow-2xl p-8 border border-gray-700 max-w-md w-full">
+                <form onSubmit={handleSubmit} className="flex flex-col items-center">
+                    <h1 className="text-2xl font-semibold text-gray-200 mb-6">
+                        Create an Account
+                    </h1>
+                    
+                    {error && (
+                        <div className="bg-red-600 bg-opacity-20 border border-red-500 text-red-400 p-3 rounded-lg mb-4 w-full">
+                            {error}
+                        </div>
+                    )}
+                    
+                    <div className="w-full mb-4">
                         <input
                             type="text"
-                            className="textbox mt-2"
+                            className="w-full bg-gray-700 border border-gray-600 text-gray-200 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                             placeholder="Enter username"
                             value={username}
                             onChange={(e) => setUsername(e.target.value)}
                             required
                         />
-
+                    </div>
+                    
+                    <div className="w-full mb-4">
                         <input
                             type="email"
-                            className="textbox mt-2"
+                            className="w-full bg-gray-700 border border-gray-600 text-gray-200 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                             placeholder="Enter email"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             required
                         />
-
+                    </div>
+                    
+                    <div className="w-full mb-4">
                         <input
                             type="password"
-                            className="textbox mt-2"
+                            className="w-full bg-gray-700 border border-gray-600 text-gray-200 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                             placeholder="Enter password"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                             required
                         />
-
+                    </div>
+                    
+                    <div className="w-full mb-6">
                         <input
                             type="password"
-                            className="textbox mt-2"
+                            className="w-full bg-gray-700 border border-gray-600 text-gray-200 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                             placeholder="Confirm password"
                             value={confirmPassword}
                             onChange={(e) => setConfirmPassword(e.target.value)}
                             required
                         />
-
-                        <button type="submit" className="Btn mt-2">
-                            Register
-                        </button>
-
-                        {error && <p className="text-red-500 mt-2">{error}</p>}
-
-                        <p className="text-sm p-2 font-weight-normal flex justify-center">
-                            Already have an account? &nbsp;
-                            <a href="/login" className="text-blue-400">Sign in</a>
-                        </p>
-                    </form>
-                </div>
+                    </div>
+                    
+                    <button
+                        type="submit"
+                        className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg transition-colors w-full"
+                    >
+                        Register
+                    </button>
+                    
+                    <p className="text-gray-400 mt-4">
+                        Already have an account?{" "}
+                        <a href="/login" className="text-blue-400 hover:text-blue-300">
+                            Sign in
+                        </a>
+                    </p>
+                </form>
             </div>
         </div>
     );

@@ -11,21 +11,22 @@ import Profile from "./Components/Profile";
 import Thumbnail from "./Components/thumbnail";
 import Video from "./Components/Video";
 
+
 function App() {
   return (
-  //   <BrowserRouter>
-  //   <Routes>
-  //     <Route path="/Login" element={<Login />} />
-  //     <Route path="/Register" element={<Register />} />
-  //     <Route path="/" element={<Nav />} >
-  //       <Route index element={<MainPage />} /> 
-  //       <Route index element={<Thumbnail />} />
-  //       <Route path="/Profile" element={<Profile/>} />
-  //     </Route>
 
-     
-  //   </Routes>
-  // </BrowserRouter>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/Login" element={<Login />} />
+      <Route path="/Register" element={<Register />} />
+      <Route path="/" element={<Nav />} >
+        <Route index element={<MainPage />} /> 
+        <Route index element={<Thumbnail />} />
+        <Route path="profile" element={<Profile/>} />
+      </Route>
+    </Routes>
+  </BrowserRouter>
+
   // <MainPage/>
   // <MovieCarousel/>
   // <SeriesCarousel/>
@@ -33,7 +34,7 @@ function App() {
   //  <Login/>
   //  <Register/>
   // </div>
-  <Video/>
+  // <Video/>
 
   )
 }

@@ -21,7 +21,7 @@ const MainPage = () => {
     }, []);
 
     return (
-        <div>
+        <div className='h-64 overflow-y-auto border p-4'>
             <h1>Welcome, {username}</h1>
         </div>
     );

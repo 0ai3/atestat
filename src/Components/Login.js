@@ -1,78 +1,79 @@
 import React, { useState } from "react";
-import {auth} from "../firebase";
+import { auth } from "../firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
-
 import "../App.css";
 
 function Login() {
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
-  const navigate = useNavigate();
-
+	const [error, setError] = useState("");
+	const navigate = useNavigate();
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
-    try {
-      await signInWithEmailAndPassword(auth, email, password);
-      alert("User logged in successfully!");
-      navigate("/");
-    } catch (err) {
-      setError(err.message);
-    }
-		console.log("Email:", email);
-		console.log("Password :", password);
+		try {
+			await signInWithEmailAndPassword(auth, email, password);
+			alert("User logged in successfully!");
+			navigate("/");
+		} catch (err) {
+			setError(err.message);
+			console.log(error);
+		}
 	};
 
 	return (
-		<div className="h-screen bg-gray-200">
-			<div className="flex flex-row justify-center items-center h-screen">
-				<div className="flex flex-col justify-evenly items-center bg-white p-10 rounded-lg shadow-lg mx-auto">
-					<form
-						onSubmit={handleSubmit}
-						className="flex flex-col justify-center items-center"
+		<div className="min-h-screen bg-gray-700 flex items-center justify-center">
+			<div className="bg-gray-800 rounded-xl shadow-2xl p-8 border border-gray-700 max-w-md w-full">
+				<form onSubmit={handleSubmit} className="flex flex-col items-center">
+					<h1 className="text-2xl font-semibold text-gray-200 mb-6">
+						Please sign in
+					</h1>
+					
+					{error && (
+						<div className="bg-red-600 bg-opacity-20 border border-red-500 text-red-400 p-3 rounded-lg mb-4 w-full">
+							{error}
+						</div>
+					)}
+					
+					<div className="w-full mb-4">
+						<input
+							type="email"
+							className="w-full bg-gray-700 border border-gray-600 text-gray-200 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+							name="email"
+							placeholder="Enter e-mail"
+							required
+							onChange={(e) => setEmail(e.target.value)}
+							value={email}
+						/>
+					</div>
+					
+					<div className="w-full mb-6">
+						<input
+							type="password"
+							className="w-full bg-gray-700 border border-gray-600 text-gray-200 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+							name="password"
+							placeholder="Password"
+							value={password}
+							onChange={(e) => setPassword(e.target.value)}
+							required
+						/>
+					</div>
+					
+					<button
+						type="submit"
+						className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg transition-colors w-full"
 					>
-						<h1 className="text-3xl p-2 font-weight-normal flex justify-center">
-							Please sign in
-						</h1>
-						<div className="mt-2 flex flex-col justify-between">
-							<input
-								type="email"
-								className="textbox"
-								name="email"
-								placeholder="Enter e-mail"
-                required
-                onChange={(e) => setEmail(e.target.value)}
-                value={email}
-							/>
-						</div>
-						<div className="flex flex-col mt-2 justify-between">
-							<input
-								type="password"
-								className="textbox"
-								name="password"
-								placeholder="Password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                required
-							/>
-						</div>
-						<div className="flex justify-center">
-							<button type="submit" className="Btn mt-2">
-								Sign in
-							</button>
-						</div>
-						<div>
-							<h1 className="text-sm p-2 font-weight-normal flex justify-center">
-								Don't have an account? &nbsp;{" "}
-								<a href="/register" className="text-blue-400">
-									Register
-								</a>
-							</h1>
-						</div>
-					</form>
-				</div>
+						Sign in
+					</button>
+					
+					<p className="text-gray-400 mt-4">
+						Don't have an account?{" "}
+						<a href="/register" className="text-blue-400 hover:text-blue-300">
+							Register
+						</a>
+					</p>
+				</form>
 			</div>
 		</div>
 	);

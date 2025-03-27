@@ -4,17 +4,20 @@ import { useEffect, useState } from "react";
 import { onAuthStateChanged } from "firebase/auth";
 import LogOut from "./LogOut";
 
-const userProfilePic = "";
+
 
 function Nav() {
 	const [username, setUsername] = useState("Guest");
+	const [userImage, setUserImage] = useState("");
 
 	useEffect(() => {
 		const unsubscribe = onAuthStateChanged(auth, (user) => {
 			if (user) {
 				setUsername(user.displayName || "User");
+				setUserImage(user.photoURL);
 			} else {
 				setUsername("Guest");
+
 			}
 		});
 
@@ -22,7 +25,7 @@ function Nav() {
 	}, []);
 
 	return (
-		<div className="flex flex-col min-h-screen">
+		<div className="flex flex-col min-h-screen  w-full">
 			<div className="flex flex-1">
 				<aside className="w-20 h-screen bg-gray-900 text-white flex flex-col fixed">
 					<img 
@@ -125,8 +128,11 @@ function Nav() {
 				</aside>
 
 				<div className="flex-1 flex flex-col ml-20">
-					<nav className="flex justify-between items-center bg-gray-800 text-white w-full py-5 px-6">
+					<nav className="flex justify-between items-center bg-gray-800 text-white w-full py-5 px-6 max-h-[80px]">
 						<ul className="flex w-full justify-between items-center">
+							<li>
+								<h1>NUme</h1>
+							</li>
 							<li>
 								<input
 									type="text"
@@ -150,15 +156,15 @@ function Nav() {
 										</Link>
 									</>
 								) : (
-									<div className="flex flex-col gap-2 justify-center">
+									<div className="flex flex-row gap-2 justify-center items-center">
 										<Link to="/profile">
 											<img
-												src={userProfilePic}
+												src={userImage}
 												alt="Profile"
 												className="w-10 h-10 rounded-full border-2 border-blue-400 hover:border-blue-500 transition"
 											/>
 										</Link>
-										<LogOut />
+										 <LogOut />
 									</div>
 								)}
 							</li>
@@ -171,7 +177,7 @@ function Nav() {
 
 					<footer className="bg-gray-800 text-white py-4 px-6 text-center">
 						<p>
-							© {new Date().getFullYear()} Your Company. All rights reserved.
+							© {new Date().getFullYear()} NUme. All rights reserved.
 						</p>
 						<ul className="flex justify-center space-x-4 mt-2">
 							<li>
