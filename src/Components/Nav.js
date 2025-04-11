@@ -29,7 +29,7 @@ function Nav() {
 			<div className="flex flex-1 ">
 				<aside className="w-20 h-screen bg-gray-900 text-white flex flex-col fixed">
 					<img 
-					src="/images/placeholderLogo.png" //needs to be a 1:1 ratio image (eu am scris asta gen da mi mai usor sa scriu pe engleza razvan)
+					src="/images/logo.png"
 					alt="Logo" 
 					className="h-20"
 					/>
@@ -128,15 +128,13 @@ function Nav() {
 				</aside>
 
 				<div className="flex-1 flex flex-col ml-20">
-					<nav className="flex justify-between items-center bg-gray-800 text-white w-full py-5 px-6 max-h-[80px] fixed top-0 mb-20">
+					<nav className="flex justify-between items-center bg-gray-800 text-white w-[calc(100vw-5rem)] py-5 px-6 max-h-[80px] fixed top-0 mb-20">
 						<ul className="flex w-full justify-between items-center">
-							<li>
-								<h1>NUme</h1>
-							</li>
+							
 							<li>
 								<input
 									type="text"
-									className="w-72 p-2 rounded-md bg-gray-700 text-white placeholder-gray-400 outline-none focus:ring-2 focus:ring-blue-400"
+									className="w-96 p-2 rounded-md bg-gray-700 text-white placeholder-gray-400 outline-none focus:ring-2 focus:ring-blue-400"
 									name="search"
 									placeholder="Search content..."
 								/>
@@ -177,7 +175,7 @@ function Nav() {
 
 					<footer className="bg-gray-800 text-white py-4 px-6 text-center fixed bottom-0 w-full">
 						<p>
-							© {new Date().getFullYear()} NUme. All rights reserved.
+							© {new Date().getFullYear()} Streamly. All rights reserved.
 						</p>
 						<ul className="flex justify-center space-x-4 mt-2">
 							<li>

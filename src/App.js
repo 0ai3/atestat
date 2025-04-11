@@ -25,6 +25,7 @@ function App() {
         <Route path="profile" element={<Profile/>} />
         <Route path="movies" element={<MovieCarousel/>}/>
         <Route path="series" element={<SeriesCarousel/>}/>
+        <Route path="/:id" element={<Video/>}/>
       </Route>
     </Routes>
   </BrowserRouter>

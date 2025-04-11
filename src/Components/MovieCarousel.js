@@ -9,6 +9,7 @@ function MovieCarousel() {
 			.then((response) => response.json())
 			.then((data) => setMovies(data));
 	}, []);
+    
 	return (
 		<div className="relative">
     <div className="overflow-x-scroll [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none'] whitespace-nowrap flex space-x-4 p-4">

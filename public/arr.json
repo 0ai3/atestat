@@ -7,7 +7,8 @@
 		"director": "Frank Darabont",
 		"rating": 9.3,
 		"type": "Movie",
-		"image": "./images/The_Shawshank_Redemption.jpg"
+		"image": "./images/The_Shawshank_Redemption.jpg",
+		"video": ""
 	},
 	{
 		"id": 2,
@@ -17,7 +18,9 @@
 		"director": "Francis Ford Coppola",
 		"rating": 9.2,
 		"type": "Movie",
-		"image": "./images/The_Godfather.jpg"
+		"image": "./images/The_Godfather.jpg",
+		"video": ""
+
 	},
 	{
 		"id": 3,
@@ -27,7 +30,8 @@
 		"director": "Christopher Nolan",
 		"rating": 9.0,
 		"type": "Movie",
-		"image": "./images/The_Dark_Knight.jpg"
+		"image": "./images/The_Dark_Knight.jpg",
+		"video": ""
 	},
 	{
 		"id": 4,
@@ -37,7 +41,8 @@
 		"director": "Vince Gilligan",
 		"rating": 9.5,
 		"type": "Series",
-		"image": "./images/Breaking_Bad.jpg"
+		"image": "./images/Breaking_Bad.jpg",
+		"video": ""
 	},
 	{
 		"id": 5,
@@ -47,7 +52,8 @@
 		"director": "David Benioff, D. B. Weiss",
 		"rating": 9.2,
 		"type": "Series",
-		"image": "./images/Game_Of_Thrones.jpg"
+		"image": "./images/Game_Of_Thrones.jpg",
+		"video": ""
 	},
 	{
 		"id": 6,
@@ -57,7 +63,8 @@
 		"director": "The Duffer Brothers",
 		"rating": 8.7,
 		"type": "Series",
-		"image": "./images/Stranger_Things.jpg"
+		"image": "./images/Stranger_Things.jpg",
+		"video": ""
 	},
 	{
 		"id": 7,
@@ -67,7 +74,8 @@
 		"director": "Lauren Schmidt Hissrich",
 		"rating": 8.2,
 		"type": "Series",
-		"image": "./images/The_Witcher.jpg"
+		"image": "./images/The_Witcher.jpg",
+		"video": ""
 	},
 	{
 		"id": 8,
@@ -77,7 +85,8 @@
 		"director": "Lana Wachowski, Lilly Wachowski",
 		"rating": 8.7,
 		"type": "Movie",
-		"image": "./images/The_Matrix.jpg"
+		"image": "./images/The_Matrix.jpg",
+		"video": ""
 	},
 	{
 		"id": 9,
@@ -87,7 +96,8 @@
 		"director": "Christopher Nolan",
 		"rating": 8.6,
 		"type": "Movie",
-		"image": "./images/Interstellar.jpg"
+		"image": "./images/Interstellar.jpg",
+		"video": ""
 	},
 	{
 		"id": 10,
@@ -97,7 +107,8 @@
 		"director": "David Crane, Marta Kauffman",
 		"rating": 8.9,
 		"type": "Series",
-		"image": "./images/Friends.jpg"
+		"image": "./images/Friends.jpg",
+		"video": ""
 	},
 	{
 		"id": 11,
@@ -107,7 +118,8 @@
 		"director": "Greg Daniels",
 		"rating": 9.0,
 		"type": "Series",
-		"image": "./images/The_Office.jpg"
+		"image": "./images/The_Office.jpg",
+		"video": ""
 	},
 	{
 		"id": 12,
@@ -117,7 +129,8 @@
 		"director": "Steven Moffat, Mark Gatiss",
 		"rating": 9.1,
 		"type": "Series",
-		"image": "./images/Sherlock.jpg"
+		"image": "./images/Sherlock.jpg",
+		"video": ""
 	},
 	{
 		"id": 13,
@@ -127,7 +140,8 @@
 		"director": "Johan Renck",
 		"rating": 9.4,
 		"type": "Series",
-		"image": "./images/Chernobyl.jpg"
+		"image": "./images/Chernobyl.jpg",
+		"video": ""
 	},
 	{
 		"id": 14,
@@ -137,7 +151,8 @@
 		"director": "Eric Kripke",
 		"rating": 8.7,
 		"type": "Series",
-		"image": "./images/The_Boys.jpg"
+		"image": "./images/The_Boys.jpg",
+		"video": ""
 	},
 	{
 		"id": 15,
@@ -147,7 +162,8 @@
 		"director": "Hwang Dong-hyuk",
 		"rating": 8.0,
 		"type": "Series",
-		"image": "./images/Squid_Game.jpg"
+		"image": "./images/Squid_Game.jpg",
+		"video": ""
 	},
 	{
 		"id": 16,
@@ -157,7 +173,8 @@
 		"director": "Craig Mazin, Neil Druckmann",
 		"rating": 8.9,
 		"type": "Series",
-		"image": "./images/The_Last_of_Us.jpg"
+		"image": "./images/The_Last_of_Us.jpg",
+		"video": ""
 	},
 	{
 		"id": 17,
@@ -167,7 +184,8 @@
 		"director": "Denis Villeneuve",
 		"rating": 8.3,
 		"type": "Movie",
-		"image": "./images/Dune_Part_One.jpg"
+		"image": "./images/Dune_Part_One.jpg",
+		"video": ""
 	},
 	{
 		"id": 18,
@@ -177,7 +195,8 @@
 		"director": "Vince Gilligan, Peter Gould",
 		"rating": 9.0,
 		"type": "Series",
-		"image": "./images/Better_Call_Saul.jpg"
+		"image": "./images/Better_Call_Saul.jpg",
+		"video": ""
 	},
 	{
 		"id": 19,
@@ -187,7 +206,8 @@
 		"director": "James Cameron",
 		"rating": 7.8,
 		"type": "Movie",
-		"image": "./images/Avatar.jpg"
+		"image": "./images/Avatar.jpg",
+		"video": ""
 	},
 	{
 		"id": 20,
@@ -197,7 +217,8 @@
 		"director": "Todd Phillips",
 		"rating": 8.4,
 		"type": "Movie",
-		"image": "./images/Joker.jpg"
+		"image": "./images/Joker.jpg",
+		"video": ""
 	},
 	{
 		"id": 21,
@@ -207,7 +228,8 @@
 		"director": "Carlo Bernard, Chris Brancato",
 		"rating": 8.8,
 		"type": "Series",
-		"image": "./images/Narcos.jpg"
+		"image": "./images/Narcos.jpg",
+		"video": ""
 	},
 	{
 		"id": 22,
@@ -217,7 +239,8 @@
 		"director": "Kate Herron",
 		"rating": 8.2,
 		"type": "Series",
-		"image": "./images/Loki.jpg"
+		"image": "./images/Loki.jpg",
+		"video": ""
 	},
 	{
 		"id": 23,
@@ -227,7 +250,8 @@
 		"director": "Jon Favreau",
 		"rating": 8.7,
 		"type": "Series",
-		"image": "./images/The_Mandalorian.jpg"
+		"image": "./images/The_Mandalorian.jpg",
+		"video": ""
 	},
 	{
 		"id": 24,
@@ -237,7 +261,8 @@
 		"director": "Frank Darabont",
 		"rating": 8.1,
 		"type": "Series",
-		"image": "./images/The_Walking_Dead.jpg"
+		"image": "./images/The_Walking_Dead.jpg",
+		"video": ""
 	},
 	{
 		"id": 25,
@@ -247,7 +272,8 @@
 		"director": "James Cameron",
 		"rating": 7.9,
 		"type": "Movie",
-		"image": "./images/Titanic.jpg"
+		"image": "./images/Titanic.jpg",
+		"video": ""
 	},
 	{
 		"id": 26,
@@ -257,7 +283,8 @@
 		"director": "Christopher Nolan",
 		"rating": 8.8,
 		"type": "Movie",
-		"image": "./images/Inception.jpg"
+		"image": "./images/Inception.jpg",
+		"video": ""
 	},
 	{
 		"id": 27,
@@ -267,7 +294,8 @@
 		"director": "Masashi Kishimoto",
 		"rating": 8.3,
 		"type": "Series",
-		"image": "./images/Naruto.jpg"
+		"image": "./images/Naruto.jpg",
+		"video": ""
 	},
 	{
 		"id": 28,
@@ -277,7 +305,8 @@
 		"director": "Tetsurō Araki",
 		"rating": 9.0,
 		"type": "Series",
-		"image": "./images/Death_Note.jpg"
+		"image": "./images/Death_Note.jpg",
+		"video": ""
 	},
 	{
 		"id": 29,
@@ -287,7 +316,8 @@
 		"director": "Eiichiro Oda",
 		"rating": 8.8,
 		"type": "Series",
-		"image": "./images/One_Piece.jpg"
+		"image": "./images/One_Piece.jpg",
+		"video": ""
 	},
 	{
 		"id": 30,
@@ -297,7 +327,8 @@
 		"director": "Quentin Tarantino",
 		"rating": 8.4,
 		"type": "Movie",
-		"image": "./images/Django_Unchained.jpg"
+		"image": "./images/Django_Unchained.jpg",
+		"video": ""
 	},
 	{
 		"id": 31,
@@ -307,7 +338,8 @@
 		"director": "Peter Morgan",
 		"rating": 8.7,
 		"type": "Series",
-		"image": "./images/The_Crown.jpg"
+		"image": "./images/The_Crown.jpg",
+		"video": ""
 	},
 	{
 		"id": 32,
@@ -317,7 +349,8 @@
 		"director": "David Fincher",
 		"rating": 7.7,
 		"type": "Movie",
-		"image": "./images/The_Social_Network.jpg"
+		"image": "./images/The_Social_Network.jpg",
+		"video": ""
 	},
 	{
 		"id": 33,
@@ -327,7 +360,8 @@
 		"director": "Scott Frank",
 		"rating": 8.6,
 		"type": "Series",
-		"image": "./images/The_Queen's_Gambit.jpg"
+		"image": "./images/The_Queen's_Gambit.jpg",
+		"video": ""
 	},
 	{
 		"id": 34,
@@ -337,7 +371,8 @@
 		"director": "Chuck Lorre, Bill Prady",
 		"rating": 8.1,
 		"type": "Series",
-		"image": "./images/The_Big_Bang_Theory.jpg"
+		"image": "./images/The_Big_Bang_Theory.jpg",
+		"video": ""
 	},
 	{
 		"id": 35,
@@ -347,7 +382,8 @@
 		"director": "Ridley Scott",
 		"rating": 8.5,
 		"type": "Movie",
-		"image": "./images/Gladiator.jpg"
+		"image": "./images/Gladiator.jpg",
+		"video": ""
 	},
 	{
 		"id": 36,
@@ -357,7 +393,8 @@
 		"director": "Matt Groening",
 		"rating": 8.7,
 		"type": "Series",
-		"image": "./images/The_Simpsons.jpg"
+		"image": "./images/The_Simpsons.jpg",
+		"video": ""
 	},
 	{
 		"id": 37,
@@ -367,7 +404,8 @@
 		"director": "Michael Schur",
 		"rating": 8.2,
 		"type": "Series",
-		"image": "./images/The_Good_Place.jpg"
+		"image": "./images/The_Good_Place.jpg",
+		"video": ""
 	},
 	{
 		"id": 38,
@@ -377,7 +415,8 @@
 		"director": "Alejandro González Iñárritu",
 		"rating": 8.0,
 		"type": "Movie",
-		"image": "./images/The_Revenant.jpg"
+		"image": "./images/The_Revenant.jpg",
+		"video": ""
 	},
 	{
 		"id": 39,
@@ -387,7 +426,8 @@
 		"director": "Bruce Miller",
 		"rating": 8.4,
 		"type": "Series",
-		"image": "./images/The_Handmaid's_Tale.jpg"
+		"image": "./images/The_Handmaid's_Tale.jpg",
+		"video": ""
 	},
 	{
 		"id": 40,
@@ -397,7 +437,8 @@
 		"director": "Martin Scorsese",
 		"rating": 7.8,
 		"type": "Movie",
-		"image": "./images/The_Irishman.jpg"
+		"image": "./images/The_Irishman.jpg",
+		"video": ""
 	},
 	{
 		"id": 41,
@@ -407,7 +448,8 @@
 		"director": "Noah Hawley",
 		"rating": 8.9,
 		"type": "Series",
-		"image": "./images/Fargo.jpg"
+		"image": "./images/Fargo.jpg",
+		"video": ""
 	},
 	{
 		"id": 42,
@@ -417,7 +459,8 @@
 		"director": "Amy Sherman-Palladino",
 		"rating": 8.7,
 		"type": "Series",
-		"image": "./images/The_Marvelous_Mrs_Maisel.jpg"
+		"image": "./images/The_Marvelous_Mrs_Maisel.jpg",
+		"video": ""
 	},
 	{
 		"id": 43,
@@ -427,7 +470,8 @@
 		"director": "Gabriele Muccino",
 		"rating": 8.0,
 		"type": "Movie",
-		"image": "./images/The_Pursuit_of_Happyness.jpg"
+		"image": "./images/The_Pursuit_of_Happyness.jpg",
+		"video": ""
 	},
 	{
 		"id": 44,
@@ -437,7 +481,8 @@
 		"director": "David Chase",
 		"rating": 9.2,
 		"type": "Series",
-		"image": "./images/The_Sopranos.jpg"
+		"image": "./images/The_Sopranos.jpg",
+		"video": ""
 	},
 	{
 		"id": 45,
@@ -447,7 +492,8 @@
 		"director": "Francis Ford Coppola",
 		"rating": 9.0,
 		"type": "Movie",
-		"image": "./images/The_Godfather_Part_2.jpg"
+		"image": "./images/The_Godfather_Part_2.jpg",
+		"video": ""
 	},
 	{
 		"id": 46,
@@ -457,7 +503,8 @@
 		"director": "Jonathan Demme",
 		"rating": 8.6,
 		"type": "Movie",
-		"image": "./images/The_Silence_of_the_Lambs.jpg"
+		"image": "./images/The_Silence_of_the_Lambs.jpg",
+		"video": ""
 	},
 	{
 		"id": 47,
@@ -467,7 +514,8 @@
 		"director": "Aaron Sorkin",
 		"rating": 8.7,
 		"type": "Series",
-		"image": "./images/The_West_Wing.jpg"
+		"image": "./images/The_West_Wing.jpg",
+		"video": ""
 	},
 	{
 		"id": 48,
@@ -477,7 +525,8 @@
 		"director": "Mark Fergus, Hawk Ostby",
 		"rating": 8.5,
 		"type": "Series",
-		"image": "./images/The_Expanse.jpg"
+		"image": "./images/The_Expanse.jpg",
+		"video": ""
 	},
 	{
 		"id": 49,
@@ -487,7 +536,8 @@
 		"director": "Guillermo del Toro",
 		"rating": 7.3,
 		"type": "Movie",
-		"image": "./images/The_Shape_of_Water.jpg"
+		"image": "./images/The_Shape_of_Water.jpg",
+		"video": ""
 	},
 	{
 		"id": 50,
@@ -497,6 +547,7 @@
 		"director": "Steve Blackman",
 		"rating": 8.0,
 		"type": "Series",
-		"image": "./images/The_Umbrella_Academy.jpg"
+		"image": "./images/The_Umbrella_Academy.jpg",
+		"video": ""
 	}
 ]
