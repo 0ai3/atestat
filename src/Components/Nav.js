@@ -25,9 +25,9 @@ function Nav() {
 	}, []);
 
 	return (
-		<div className="flex flex-col min-h-screen  w-full ">
+		<div className="flex flex-col min-h-screen w-full ">
 			<div className="flex flex-1 ">
-				<aside className="w-20 h-screen bg-gray-900 text-white flex flex-col fixed">
+				<aside className="w-20 h-screen bg-gray-900 text-white flex flex-col fixed z-50">
 					<img 
 					src="/images/logo.png"
 					alt="Logo" 
@@ -128,7 +128,7 @@ function Nav() {
 				</aside>
 
 				<div className="flex-1 flex flex-col ml-20">
-					<nav className="flex justify-between items-center bg-gray-800 text-white w-[calc(100vw-5rem)] py-5 px-6 max-h-[80px] fixed top-0 mb-20">
+					<nav className="flex justify-between items-center bg-gray-800 text-white w-[calc(100vw-5rem)] py-5 px-6 max-h-[80px] fixed top-0 mb-20 z-50">
 						<ul className="flex w-full justify-between items-center">
 							
 							<li>
@@ -173,7 +173,7 @@ function Nav() {
 						<Outlet />
 					</main>
 
-					<footer className="bg-gray-800 text-white py-4 px-6 text-center fixed bottom-0 w-full">
+					<footer className="bg-gray-800 text-white py-4 px-6 text-center fixed bottom-0 w-full z-50">
 						<p>
 							© {new Date().getFullYear()} Streamly. All rights reserved.
 						</p>

@@ -1,29 +1,36 @@
 // import '../app.css';
 // Import necessary modules
-import { auth } from '../firebase';
-import { useEffect, useState } from 'react';
+import { auth } from "../firebase";
+import { useEffect, useState } from "react";
 import { onAuthStateChanged } from "firebase/auth";
+import MovieCarousel from "./MovieCarousel";
+import SeriesCarousel from "./SeriesCarousel";
 
 const MainPage = () => {
-    const [username, setUsername] = useState("Guest");
+	const [username, setUsername] = useState("Guest");
 
-    useEffect(() => {
-        const unsubscribe = onAuthStateChanged(auth, (user) => {
-            if (user) {
-                setUsername(user.displayName || "User");
-            } else {
-                setUsername("Guest");
-            }
-        });
+	useEffect(() => {
+		const unsubscribe = onAuthStateChanged(auth, (user) => {
+			if (user) {
+				setUsername(user.displayName || "User");
+			} else {
+				setUsername("Guest");
+			}
+		});
 
-        return () => unsubscribe();
-    }, []);
+		return () => unsubscribe();
+	}, []);
 
-    return (
-        <div className='h-64 overflow-y-auto p-4'>
-            <h1>Welcome, {username}</h1>
-        </div>
-    );
+	return (
+		<div className="bg-gray-700">
+            <div>
+            <MovieCarousel />
+            <SeriesCarousel />
+            </div>
+          
+
+		</div>
+	);
 };
 
 export default MainPage;

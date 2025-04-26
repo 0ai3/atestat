@@ -8,8 +8,9 @@ import MovieCarousel from "./Components/MovieCarousel";
 import SeriesCarousel from "./Components/SeriesCarousel";
 import MainPage from "./Components/mainPage";
 import Profile from "./Components/Profile";
-import Thumbnail from "./Components/thumbnail";
+import Favourites from "./Components/Favourites";
 import Video from "./Components/Video";
+
 
 
 function App() {
@@ -21,10 +22,11 @@ function App() {
       <Route path="/Register" element={<Register />} />
       <Route path="/" element={<Nav />} >
         <Route index element={<MainPage />} /> 
-        <Route index element={<Thumbnail />} />
+        {/* <Route index element={<Thumbnail />} /> */}
         <Route path="profile" element={<Profile/>} />
         <Route path="movies" element={<MovieCarousel/>}/>
         <Route path="series" element={<SeriesCarousel/>}/>
+        <Route path="favorites" element={<Favourites />} />
         <Route path="/:id" element={<Video/>}/>
       </Route>
     </Routes>

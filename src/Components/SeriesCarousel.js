@@ -10,8 +10,8 @@ function SeriesCarousel() {
 			.then((data) => setSeries(data));
 	}, []);
 	return (
-		<div className="relative">
-    <div className="overflow-x-scroll scrollbar-hide whitespace-nowrap flex space-x-4 p-4">
+		<div className="relative z-0">
+    <div className="overflow-x-scroll [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none'] whitespace-nowrap flex space-x-4 p-4">
         {Series
             .filter((series) => series.type === "Series")
             .map((series) => (
