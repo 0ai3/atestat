@@ -8,7 +8,7 @@ function Card(props) {
        <Link
     to={`/${props.id}`}>
       <div className="flex flex-col">
-        <div className="w-full h-48">
+        <div className="w-full h-full">
           <img
             className="w-full h-full object-cover object-center"
             src={props.image}

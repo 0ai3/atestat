@@ -23,11 +23,8 @@ const MainPage = () => {
 
 	return (
 		<div className="bg-gray-700">
-            <div>
-            <MovieCarousel />
-            <SeriesCarousel />
-            </div>
-          
+            <MovieCarousel/>
+            <SeriesCarousel/>
 
 		</div>
 	);

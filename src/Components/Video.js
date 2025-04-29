@@ -24,6 +24,22 @@ function VideoPage() {
 
 	if (!video) return <div className="text-white text-center mt-10">Loading...</div>;
 
+	// Generate several random IDs between 0 and 50, excluding the current video's ID
+	const getRandomIds = (count, exclude) => {
+		const randomIds = new Set();
+		while (randomIds.size < count) {
+			const randomId = Math.floor(Math.random() * 51); // 0-50 inclusive
+			if (randomId !== exclude) {
+				randomIds.add(randomId);
+			}
+		}
+		return Array.from(randomIds);
+	};
+
+	// Get random recommended videos
+	const randomIds = getRandomIds(9, parseInt(id));
+	const recommendedVideos = videos.filter(v => randomIds.includes(v.id));
+
 	return (
 		<div className="bg-gray-700 text-white min-h-screen p-4">
 			<div className="max-w-5xl mx-auto">
@@ -53,9 +69,8 @@ function VideoPage() {
 				{/* Optional Episode Grid or Related Content */}
 				<h2 className="text-xl font-semibold mb-2">More like this</h2>
 				<div className="mb-20 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-					{videos
-						.filter((v) => v.id !== parseInt(id)) // exclude current
-						.slice(0, 8) // show 8 others
+					{recommendedVideos
+						.slice(0, 8) // ensure we only show 8 items
 						.map((v) => (
 							<a
 								key={v.id}

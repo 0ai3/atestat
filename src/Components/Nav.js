@@ -28,11 +28,14 @@ function Nav() {
 		<div className="flex flex-col min-h-screen w-full ">
 			<div className="flex flex-1 ">
 				<aside className="w-20 h-screen bg-gray-900 text-white flex flex-col fixed z-50">
+					<Link to="/about">
 					<img 
 					src="/images/logo.png"
 					alt="Logo" 
 					className="h-20"
 					/>
+					</Link>
+					
 
 					<Link
 						to="/"

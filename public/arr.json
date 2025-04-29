@@ -549,5 +549,15 @@
 		"type": "Series",
 		"image": "./images/The_Umbrella_Academy.jpg",
 		"video": ""
+	},
+	{"id": 51,
+		"title": "Sleeping Dani",
+		"year": 2025,
+		"genre": "Action, Adventure, Comedy",
+		"director": "Dani gen",
+		"rating": 4.0,
+		"type": "Series",
+		"image": "./images/Sleeping_Dani.jpg",
+		"video": ""
 	}
 ]
