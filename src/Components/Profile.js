@@ -2,47 +2,39 @@ import React, { useState, useEffect } from "react";
 import { auth, db } from "../firebase";
 import { updateEmail, updatePassword, updateProfile } from "firebase/auth";
 import { doc, updateDoc } from "firebase/firestore";
+import { useAuth } from "../contexts/AuthContext";
 
 const Profile = () => {
+  const { currentUser } = useAuth();
   const [username, setUsername] = useState("");
   const [newUsername, setNewUsername] = useState("");
   const [email, setEmail] = useState("");
   const [newEmail, setNewEmail] = useState("");
   const [newPassword, setNewPassword] = useState("");
   const [error, setError] = useState("");
-  const [currentUser, setCurrentUser] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [profilePics, setProfilePics] = useState([]);
 
   useEffect(() => {
-    const user = auth.currentUser;
-    if (user) {
-      setCurrentUser(user);
-      setUsername(user.displayName || "User");
-      setEmail(user.email);
+    if (currentUser) {
+      setUsername(currentUser.displayName || "User");
+      setEmail(currentUser.email);
     }
     fetch("/profilePicArr.json")
       .then((response) => response.json())
       .then((data) => setProfilePics(data));
-  }, []);
+  }, [currentUser]);
 
   const handleChangeUsername = async () => {
     if (newUsername && newUsername.trim() !== "") {
       try {
-        // Update display name in Firebase Authentication
-        await updateProfile(auth.currentUser, {
+        await updateProfile(currentUser, {
           displayName: newUsername.trim()
         });
-
-        // Update username in Firestore
-        await updateDoc(doc(db, "users", auth.currentUser.uid), { 
+        await updateDoc(doc(db, "users", currentUser.uid), { 
           displayName: newUsername.trim() 
         });
-
-        // Update local state
         setUsername(newUsername.trim());
-        
-        // Clear input and show success message
         setNewUsername("");
         alert("Username updated successfully!");
       } catch (err) {
@@ -56,11 +48,11 @@ const Profile = () => {
   const handleChangeEmail = async () => {
     if (newEmail) {
       try {
-        await updateEmail(auth.currentUser, newEmail);
-        await updateDoc(doc(db, "users", auth.currentUser.uid), { email: newEmail });
+        await updateEmail(currentUser, newEmail);
+        await updateDoc(doc(db, "users", currentUser.uid), { email: newEmail });
         setEmail(newEmail);
         alert("Email updated successfully!");
-        setNewEmail(""); // Clear the field
+        setNewEmail("");
       } catch (err) {
         setError(err.message);
       }
@@ -70,9 +62,9 @@ const Profile = () => {
   const handleChangePassword = async () => {
     if (newPassword) {
       try {
-        await updatePassword(auth.currentUser, newPassword);
+        await updatePassword(currentUser, newPassword);
         alert("Password updated successfully!");
-        setNewPassword(""); // Clear the field
+        setNewPassword("");
       } catch (err) {
         setError(err.message);
       }
@@ -81,14 +73,11 @@ const Profile = () => {
 
   const handleChangeProfilePic = async (picId) => {
     try {
-      const user = auth.currentUser;
       const selectedPic = profilePics.find((pic) => pic.id === picId);
-
-      await updateProfile(user, {
+      await updateProfile(currentUser, {
         photoURL: selectedPic.imageLink,
       });
-      await updateDoc(doc(db, "users", user.uid), { photoURL: selectedPic.imageLink });
-
+      await updateDoc(doc(db, "users", currentUser.uid), { photoURL: selectedPic.imageLink });
       alert("Profile picture updated!");
       setIsModalOpen(false);
     } catch (err) {

@@ -1,10 +1,11 @@
 import { useEffect, useRef, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 function VideoPage() {
 	const [videos, setVideos] = useState([]);
 	const { id } = useParams();
 	const lastClick = useRef(0);
+	const navigate = useNavigate();
 
 	useEffect(() => {
 		fetch("/arr.json")
@@ -13,6 +14,12 @@ function VideoPage() {
 	}, []);
 
 	const video = videos.find((v) => v.id === parseInt(id));
+
+	useEffect(() => {
+		if (videos.length > 0 && !video) {
+			navigate("/404", { replace: true });
+		}
+	}, [videos, video, navigate]);
 
 	const openAd = (e) => {
 		if (Date.now() - lastClick.current > 10000) {
