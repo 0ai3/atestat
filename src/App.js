@@ -13,6 +13,8 @@ import { AuthProvider } from "./contexts/AuthContext";
 import Movies from "./Components/Movies";
 import Series from "./Components/Series";
 import NotFound from "./Components/NotFound";
+import Privacy from "./Components/Privacy";
+import Terms from "./Components/Terms";
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
             <Route path="series" element={<Series />} />
             <Route path="/about" element={<About />} />
             <Route path="about" element={<About />} />
+            <Route path="privacy" element={<Privacy />} />
+            <Route path="terms" element={<Terms />} />
             <Route path="profile" element={<Profile/>} />
             <Route path="favorites" element={<Favourites />} />
             <Route path="trending" element={<Trending />} />
