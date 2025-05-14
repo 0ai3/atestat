@@ -6,6 +6,8 @@ function VideoPage() {
 	const { id } = useParams();
 	const lastClick = useRef(0);
 	const navigate = useNavigate();
+	const [selectedSeason, setSelectedSeason] = useState(1);
+	const [selectedEpisode, setSelectedEpisode] = useState(1);
 
 	useEffect(() => {
 		fetch("/arr.json")
@@ -29,7 +31,17 @@ function VideoPage() {
 		lastClick.current = Date.now();
 	};
 
-	if (!video) return <div className="text-white text-center mt-10">Loading...</div>;
+	const handleSeasonChange = (e) => {
+		setSelectedSeason(parseInt(e.target.value));
+		setSelectedEpisode(1); // Reset episode to 1 when season changes
+	};
+
+	const handleEpisodeChange = (e) => {
+		setSelectedEpisode(parseInt(e.target.value));
+	};
+
+	if (!video)
+		return <div className="text-white text-center mt-10">Loading...</div>;
 
 	// Generate several random IDs between 0 and 50, excluding the current video's ID
 	const getRandomIds = (count, exclude) => {
@@ -44,22 +56,36 @@ function VideoPage() {
 	};
 
 	// Get random recommended videos
-	const randomIds = getRandomIds(9, parseInt(id));
-	const recommendedVideos = videos.filter(v => randomIds.includes(v.id));
+	const recommendedVideos = videos.filter(
+		(v) => v.genre === video.genre && v.id !== video.id
+	).slice(0, 8); // Ensure we only show 8 items
 
+	const isSeries = video.type === "Series";
+	
 	return (
 		<div className="bg-gray-700 text-white min-h-screen p-4">
 			<div className="max-w-5xl mx-auto">
 				{/* Video Player */}
 				<div className="aspect-w-16 aspect-h-9 mb-6">
-					<video
-						onClick={openAd}
-						controls
-						className="w-full h-full rounded-lg border border-gray-700 shadow-lg"
-					>
-						<source src={video.video} type="link" />
-						Your browser does not support the video tag.
-					</video>
+						{isSeries ? (
+							<iframe
+								src={`https://vidora.su/tv/${video.imdb}/${selectedSeason}/${selectedEpisode}?autoplay=false&colour=00ff9d&backbutton=https://www.youtube.com/watch?v=E4WlUXrJgy4&logo=https://vidora.su/logo.png`}
+								className="w-full h-[60vh] rounded-lg border border-gray-700 shadow-lg"
+								allowfullscreen
+								allow="fullscreen"
+								onClick={openAd}
+
+							/>
+						) : (
+							<iframe
+								src={`https://vidora.su/movie/${video.imdb}?autoplay=false&colour=00ff9d&backbutton=https://www.youtube.com/watch?v=E4WlUXrJgy4&logo=https://vidora.su/logo.png`}
+								className="w-full h-[60vh] rounded-lg border border-gray-700 shadow-lg"
+								allowfullscreen
+								allow="fullscreen"
+								onClick={openAd}
+							/>
+						)}
+					
 				</div>
 
 				{/* Video Info */}
@@ -70,8 +96,62 @@ function VideoPage() {
 
 				{/* You could include a short description or add rating, etc. */}
 				<p className="text-gray-300 mb-6">
-					An engaging and critically acclaimed {video.type.toLowerCase()} with a rating of {video.rating}/10.
+					An engaging and critically acclaimed {video.type.toLowerCase()} with a
+					rating of {video.rating}/10.
 				</p>
+
+				{isSeries && (
+					<div className="mb-8 bg-gray-800 p-6 rounded-xl shadow-lg">
+						<h3 className="text-lg font-semibold text-blue-400 mb-4">
+							Choose Season & Episode
+						</h3>
+
+						<div className="mb-6">
+							<label
+								className="block text-sm text-gray-300 mb-1"
+								htmlFor="season-select"
+							>
+								Select Season
+							</label>
+							<select
+								id="season-select"
+								value={selectedSeason}
+								onChange={handleSeasonChange}
+								className="w-full bg-gray-900 text-white p-2 rounded-md border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-150"
+							>
+								{Array.from({ length: video.seasons }, (_, i) => (
+									<option key={i + 1} value={i + 1}>
+										Season {i + 1}
+									</option>
+								))}
+							</select>
+						</div>
+
+						<div>
+							<label
+								className="block text-sm text-gray-300 mb-1"
+								htmlFor="episode-select"
+							>
+								Select Episode
+							</label>
+							<select
+								id="episode-select"
+								value={selectedEpisode}
+								onChange={handleEpisodeChange}
+								className="w-full bg-gray-900 text-white p-2 rounded-md border border-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500 transition duration-150"
+							>
+								{Array.from(
+									{ length: video[`season${selectedSeason}episodes`] },
+									(_, i) => (
+										<option key={i + 1} value={i + 1}>
+											Episode {i + 1}
+										</option>
+									)
+								)}
+							</select>
+						</div>
+					</div>
+				)}
 
 				{/* Optional Episode Grid or Related Content */}
 				<h2 className="text-xl font-semibold mb-2">More like this</h2>

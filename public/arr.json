@@ -8,7 +8,7 @@
 		"rating": 9.3,
 		"type": "Movie",
 		"image": "./images/The_Shawshank_Redemption.jpg",
-		"video": ""
+		"imdb": "tt0111161"
 	},
 	{
 		"id": 2,
@@ -19,8 +19,7 @@
 		"rating": 9.2,
 		"type": "Movie",
 		"image": "./images/The_Godfather.jpg",
-		"video": ""
-
+		"imdb": "tt0068646"
 	},
 	{
 		"id": 3,
@@ -31,7 +30,7 @@
 		"rating": 9.0,
 		"type": "Movie",
 		"image": "./images/The_Dark_Knight.jpg",
-		"video": ""
+		"imdb": "tt0468569"
 	},
 	{
 		"id": 4,
@@ -42,7 +41,14 @@
 		"rating": 9.5,
 		"type": "Series",
 		"image": "./images/Breaking_Bad.jpg",
-		"video": ""
+		"imdb": "tt0903747",
+		"seasons": 5,
+		"episodes": 62,
+		"season1episodes": 7,
+		"season2episodes": 13,
+		"season3episodes": 13,
+		"season4episodes": 13,
+		"season5episodes": 16
 	},
 	{
 		"id": 5,
@@ -53,7 +59,17 @@
 		"rating": 9.2,
 		"type": "Series",
 		"image": "./images/Game_Of_Thrones.jpg",
-		"video": ""
+		"imdb": "tt0944947",
+		"seasons": 8,
+		"episodes": 73,
+		"season1episodes": 10,
+		"season2episodes": 10,
+		"season3episodes": 10,
+		"season4episodes": 10,
+		"season5episodes": 10,
+		"season6episodes": 10,
+		"season7episodes": 7,
+		"season8episodes": 6
 	},
 	{
 		"id": 6,
@@ -64,7 +80,13 @@
 		"rating": 8.7,
 		"type": "Series",
 		"image": "./images/Stranger_Things.jpg",
-		"video": ""
+		"imdb": "tt4574334",
+		"seasons": 4,
+		"episodes": 34,
+		"season1episodes": 8,
+		"season2episodes": 9,
+		"season3episodes": 8,
+		"season4episodes": 9
 	},
 	{
 		"id": 7,
@@ -75,7 +97,10 @@
 		"rating": 8.2,
 		"type": "Series",
 		"image": "./images/The_Witcher.jpg",
-		"video": ""
+		"imdb": "tt5180504",
+		"seasons": 2,
+		"season1episodes": 8,
+		"season2episodes": 8
 	},
 	{
 		"id": 8,
@@ -86,7 +111,7 @@
 		"rating": 8.7,
 		"type": "Movie",
 		"image": "./images/The_Matrix.jpg",
-		"video": ""
+		"imdb": "tt0133093"
 	},
 	{
 		"id": 9,
@@ -97,7 +122,7 @@
 		"rating": 8.6,
 		"type": "Movie",
 		"image": "./images/Interstellar.jpg",
-		"video": ""
+		"imdb": "tt0816692"
 	},
 	{
 		"id": 10,
@@ -108,7 +133,18 @@
 		"rating": 8.9,
 		"type": "Series",
 		"image": "./images/Friends.jpg",
-		"video": ""
+		"imdb": "tt0108778",
+		"seasons": 10,
+		"season1episodes": 24,
+		"season2episodes": 24,
+		"season3episodes": 25,
+		"season4episodes": 24,
+		"season5episodes": 24,
+		"season6episodes": 25,
+		"season7episodes": 24,
+		"season8episodes": 24,
+		"season9episodes": 24,
+		"season10episodes": 18
 	},
 	{
 		"id": 11,
@@ -119,7 +155,17 @@
 		"rating": 9.0,
 		"type": "Series",
 		"image": "./images/The_Office.jpg",
-		"video": ""
+		"imdb": "tt0386676",
+		"seasons": 9,
+		"season1episodes": 6,
+		"season2episodes": 22,
+		"season3episodes": 23,
+		"season4episodes": 26,
+		"season5episodes": 26,
+		"season6episodes": 22,
+		"season7episodes": 24,
+		"season8episodes": 24,
+		"season9episodes": 25
 	},
 	{
 		"id": 12,
@@ -130,7 +176,13 @@
 		"rating": 9.1,
 		"type": "Series",
 		"image": "./images/Sherlock.jpg",
-		"video": ""
+		"imdb": "tt1475582",
+		"seasons": 4,
+		"episodes": 15,
+		"season1episodes": 4,
+		"season2episodes": 3,
+		"season3episodes": 4,
+		"season4episodes": 4
 	},
 	{
 		"id": 13,
@@ -141,7 +193,11 @@
 		"rating": 9.4,
 		"type": "Series",
 		"image": "./images/Chernobyl.jpg",
-		"video": ""
+		"imdb": "tt7366338",
+		"seasons": 1,
+		"episodes": 5,
+		"season1episodes": 5
+
 	},
 	{
 		"id": 14,
@@ -152,7 +208,13 @@
 		"rating": 8.7,
 		"type": "Series",
 		"image": "./images/The_Boys.jpg",
-		"video": ""
+		"imdb": "tt1190634",
+		"seasons": 3,
+		"episodes": 24,
+		"season1episodes": 8,
+		"season2episodes": 8,
+		"season3episodes": 8
+
 	},
 	{
 		"id": 15,
@@ -163,7 +225,10 @@
 		"rating": 8.0,
 		"type": "Series",
 		"image": "./images/Squid_Game.jpg",
-		"video": ""
+		"imdb": "tt10919420",
+		"seasons": 1,
+		"episodes": 9,
+		"season1episodes": 9
 	},
 	{
 		"id": 16,
@@ -174,7 +239,10 @@
 		"rating": 8.9,
 		"type": "Series",
 		"image": "./images/The_Last_of_Us.jpg",
-		"video": ""
+		"imdb": "tt3581920",
+		"seasons": 1,
+		"episodes": 9,
+		"season1episodes": 9
 	},
 	{
 		"id": 17,
@@ -185,7 +253,7 @@
 		"rating": 8.3,
 		"type": "Movie",
 		"image": "./images/Dune_Part_One.jpg",
-		"video": ""
+		"imdb": "tt1160419"
 	},
 	{
 		"id": 18,
@@ -196,7 +264,15 @@
 		"rating": 9.0,
 		"type": "Series",
 		"image": "./images/Better_Call_Saul.jpg",
-		"video": ""
+		"imdb": "tt3032476",
+		"seasons": 6,
+		"episodes": 63,
+		"season1episodes": 10,
+		"season2episodes": 10,
+		"season3episodes": 10,
+		"season4episodes": 10,
+		"season5episodes": 10,
+		"season6episodes": 13
 	},
 	{
 		"id": 19,
@@ -207,7 +283,7 @@
 		"rating": 7.8,
 		"type": "Movie",
 		"image": "./images/Avatar.jpg",
-		"video": ""
+		"imdb": "tt0499549"
 	},
 	{
 		"id": 20,
@@ -218,7 +294,7 @@
 		"rating": 8.4,
 		"type": "Movie",
 		"image": "./images/Joker.jpg",
-		"video": ""
+		"imdb": "tt7286456"
 	},
 	{
 		"id": 21,
@@ -229,7 +305,12 @@
 		"rating": 8.8,
 		"type": "Series",
 		"image": "./images/Narcos.jpg",
-		"video": ""
+		"imdb": "tt2707408",
+		"seasons": 3,
+		"episodes": 30,
+		"season1episodes": 10,
+		"season2episodes": 10,
+		"season3episodes": 10
 	},
 	{
 		"id": 22,
@@ -240,7 +321,11 @@
 		"rating": 8.2,
 		"type": "Series",
 		"image": "./images/Loki.jpg",
-		"video": ""
+		"imdb": "tt9140554",
+		"seasons": 2,
+		"episodes": 12,
+		"season1episodes": 6,
+		"season2episodes": 6
 	},
 	{
 		"id": 23,
@@ -251,7 +336,12 @@
 		"rating": 8.7,
 		"type": "Series",
 		"image": "./images/The_Mandalorian.jpg",
-		"video": ""
+		"imdb": "tt8111088",
+		"seasons": 3,
+		"episodes": 24,
+		"season1episodes": 8,
+		"season2episodes": 8,
+		"season3episodes": 8
 	},
 	{
 		"id": 24,
@@ -262,7 +352,20 @@
 		"rating": 8.1,
 		"type": "Series",
 		"image": "./images/The_Walking_Dead.jpg",
-		"video": ""
+		"imdb": "tt1520211",
+		"seasons": 11,
+		"episodes": 177,
+		"season1episodes": 6,
+		"season2episodes": 13,
+		"season3episodes": 16,
+		"season4episodes": 16,
+		"season5episodes": 16,
+		"season6episodes": 16,
+		"season7episodes": 16,
+		"season8episodes": 16,
+		"season9episodes": 16,
+		"season10episodes": 22,
+		"season11episodes": 24
 	},
 	{
 		"id": 25,
@@ -273,7 +376,7 @@
 		"rating": 7.9,
 		"type": "Movie",
 		"image": "./images/Titanic.jpg",
-		"video": ""
+		"imdb": "tt0120338"
 	},
 	{
 		"id": 26,
@@ -284,7 +387,7 @@
 		"rating": 8.8,
 		"type": "Movie",
 		"image": "./images/Inception.jpg",
-		"video": ""
+		"imdb": "tt1375666"
 	},
 	{
 		"id": 27,
@@ -295,7 +398,14 @@
 		"rating": 8.3,
 		"type": "Series",
 		"image": "./images/Naruto.jpg",
-		"video": ""
+		"imdb": "tt0409591",
+		"seasons": 5,
+		"episodes": 220,
+		"season1episodes": 57,
+		"season2episodes": 43,
+		"season3episodes": 41,
+		"season4episodes": 42,
+		"season5episodes": 37
 	},
 	{
 		"id": 28,
@@ -306,7 +416,10 @@
 		"rating": 9.0,
 		"type": "Series",
 		"image": "./images/Death_Note.jpg",
-		"video": ""
+		"imdb": "tt0877057",
+		"seasons": 1,
+		"episodes": 37,
+		"season1episodes": 37
 	},
 	{
 		"id": 29,
@@ -317,7 +430,10 @@
 		"rating": 8.8,
 		"type": "Series",
 		"image": "./images/One_Piece.jpg",
-		"video": ""
+		"imdb": "tt0388629",
+		"seasons": 1,
+		"episodes": 1070,
+		"season1episodes": 1070
 	},
 	{
 		"id": 30,
@@ -328,7 +444,7 @@
 		"rating": 8.4,
 		"type": "Movie",
 		"image": "./images/Django_Unchained.jpg",
-		"video": ""
+		"imdb": "tt1853728"
 	},
 	{
 		"id": 31,
@@ -339,7 +455,15 @@
 		"rating": 8.7,
 		"type": "Series",
 		"image": "./images/The_Crown.jpg",
-		"video": ""
+		"imdb": "tt4786824",
+		"seasons": 6,
+		"episodes": 60,
+		"season1episodes": 10,
+		"season2episodes": 10,
+		"season3episodes": 10,
+		"season4episodes": 10,
+		"season5episodes": 10,
+		"season6episodes": 10
 	},
 	{
 		"id": 32,
@@ -350,7 +474,7 @@
 		"rating": 7.7,
 		"type": "Movie",
 		"image": "./images/The_Social_Network.jpg",
-		"video": ""
+		"imdb": "tt1285016"
 	},
 	{
 		"id": 33,
@@ -361,7 +485,10 @@
 		"rating": 8.6,
 		"type": "Series",
 		"image": "./images/The_Queen's_Gambit.jpg",
-		"video": ""
+		"imdb": "tt10048342",
+		"seasons": 1,
+		"episodes": 7,
+		"season1episodes": 7
 	},
 	{
 		"id": 34,
@@ -372,7 +499,21 @@
 		"rating": 8.1,
 		"type": "Series",
 		"image": "./images/The_Big_Bang_Theory.jpg",
-		"video": ""
+		"imdb": "tt0898266",
+		"seasons": 12,
+		"episodes": 279,
+		"season1episodes": 17,
+		"season2episodes": 23,
+		"season3episodes": 23,
+		"season4episodes": 24,
+		"season5episodes": 24,
+		"season6episodes": 24,
+		"season7episodes": 24,
+		"season8episodes": 24,
+		"season9episodes": 24,
+		"season10episodes": 24,
+		"season11episodes": 24,
+		"season12episodes": 24
 	},
 	{
 		"id": 35,
@@ -383,7 +524,7 @@
 		"rating": 8.5,
 		"type": "Movie",
 		"image": "./images/Gladiator.jpg",
-		"video": ""
+		"imdb": "tt0172495"
 	},
 	{
 		"id": 36,
@@ -394,7 +535,43 @@
 		"rating": 8.7,
 		"type": "Series",
 		"image": "./images/The_Simpsons.jpg",
-		"video": ""
+		"imdb": "tt0096697",
+		"seasons": 34,
+		"episodes": 750,
+		"season1episodes": 13,
+		"season2episodes": 22,
+		"season3episodes": 24,
+		"season4episodes": 18,
+		"season5episodes": 25,
+		"season6episodes": 25,
+		"season7episodes": 25,
+		"season8episodes": 25,
+		"season9episodes": 25,
+		"season10episodes": 23,
+		"season11episodes": 22,
+		"season12episodes": 21,
+		"season13episodes": 22,
+		"season14episodes": 22,
+		"season15episodes": 22,
+		"season16episodes": 21,
+		"season17episodes": 22,
+		"season18episodes": 22,
+		"season19episodes": 20,
+		"season20episodes": 23,
+		"season21episodes": 23,
+		"season22episodes": 22,
+		"season23episodes": 22,
+		"season24episodes": 22,
+		"season25episodes": 22,
+		"season26episodes": 22,
+		"season27episodes": 22,
+		"season28episodes": 22,
+		"season29episodes": 22,
+		"season30episodes": 22,
+		"season31episodes": 22,
+		"season32episodes": 22,
+		"season33episodes": 22,
+		"season34episodes": 22
 	},
 	{
 		"id": 37,
@@ -405,7 +582,13 @@
 		"rating": 8.2,
 		"type": "Series",
 		"image": "./images/The_Good_Place.jpg",
-		"video": ""
+		"imdb": "tt4955642",
+		"seasons": 4,
+		"episodes": 50,
+		"season1episodes": 13,
+		"season2episodes": 13,
+		"season3episodes": 12,
+		"season4episodes": 13
 	},
 	{
 		"id": 38,
@@ -416,7 +599,7 @@
 		"rating": 8.0,
 		"type": "Movie",
 		"image": "./images/The_Revenant.jpg",
-		"video": ""
+		"imdb": "tt1663202"
 	},
 	{
 		"id": 39,
@@ -427,7 +610,14 @@
 		"rating": 8.4,
 		"type": "Series",
 		"image": "./images/The_Handmaid's_Tale.jpg",
-		"video": ""
+		"imdb": "tt5834204",
+		"seasons": 5,
+		"episodes": 46,
+		"season1episodes": 10,
+		"season2episodes": 13,
+		"season3episodes": 13,
+		"season4episodes": 10,
+		"season5episodes": 10
 	},
 	{
 		"id": 40,
@@ -438,7 +628,7 @@
 		"rating": 7.8,
 		"type": "Movie",
 		"image": "./images/The_Irishman.jpg",
-		"video": ""
+		"imdb": "tt1302006"
 	},
 	{
 		"id": 41,
@@ -449,7 +639,14 @@
 		"rating": 8.9,
 		"type": "Series",
 		"image": "./images/Fargo.jpg",
-		"video": ""
+		"imdb": "tt2802850",
+		"seasons": 4,
+		"episodes": 50,
+		"season1episodes": 10,
+		"season2episodes": 10,
+		"season3episodes": 10,
+		"season4episodes": 10,
+		"season5episodes": 10
 	},
 	{
 		"id": 42,
@@ -460,7 +657,14 @@
 		"rating": 8.7,
 		"type": "Series",
 		"image": "./images/The_Marvelous_Mrs_Maisel.jpg",
-		"video": ""
+		"imdb": "tt5788792",
+		"seasons": 5,
+		"episodes": 43,
+		"season1episodes": 8,
+		"season2episodes": 10,
+		"season3episodes": 8,
+		"season4episodes": 8,
+		"season5episodes": 9
 	},
 	{
 		"id": 43,
@@ -469,12 +673,12 @@
 		"genre": "Biography, Drama",
 		"director": "Gabriele Muccino",
 		"rating": 8.0,
-		"type": "Movie",
+			"type": "Movie",
 		"image": "./images/The_Pursuit_of_Happyness.jpg",
-		"video": ""
+		"imdb": "tt0454921"
 	},
 	{
-		"id": 44,
+			"id": 44,
 		"title": "The Sopranos",
 		"year": 1999,
 		"genre": "Crime, Drama",
@@ -482,7 +686,15 @@
 		"rating": 9.2,
 		"type": "Series",
 		"image": "./images/The_Sopranos.jpg",
-		"video": ""
+		"imdb": "tt0141842",
+		"seasons": 6,
+		"episodes": 86,
+		"season1episodes": 13,
+		"season2episodes": 13,
+		"season3episodes": 12,
+		"season4episodes": 13,
+		"season5episodes": 13,
+		"season6episodes": 21
 	},
 	{
 		"id": 45,
@@ -493,7 +705,7 @@
 		"rating": 9.0,
 		"type": "Movie",
 		"image": "./images/The_Godfather_Part_2.jpg",
-		"video": ""
+		"imdb": "tt0071562"
 	},
 	{
 		"id": 46,
@@ -504,7 +716,7 @@
 		"rating": 8.6,
 		"type": "Movie",
 		"image": "./images/The_Silence_of_the_Lambs.jpg",
-		"video": ""
+		"imdb": "tt0102926"
 	},
 	{
 		"id": 47,
@@ -515,7 +727,16 @@
 		"rating": 8.7,
 		"type": "Series",
 		"image": "./images/The_West_Wing.jpg",
-		"video": ""
+		"imdb": "tt0200276",
+		"seasons": 7,
+		"episodes": 154,
+		"season1episodes": 22,
+		"season2episodes": 22,
+		"season3episodes": 21,
+		"season4episodes": 23,
+		"season5episodes": 22,
+		"season6episodes": 22,
+		"season7episodes": 22
 	},
 	{
 		"id": 48,
@@ -526,7 +747,15 @@
 		"rating": 8.5,
 		"type": "Series",
 		"image": "./images/The_Expanse.jpg",
-		"video": ""
+		"imdb": "tt3230854",
+		"seasons": 6,
+		"episodes": 62,
+		"season1episodes": 10,
+		"season2episodes": 13,
+		"season3episodes": 13,
+		"season4episodes": 10,
+		"season5episodes": 10,
+		"season6episodes": 6
 	},
 	{
 		"id": 49,
@@ -537,7 +766,7 @@
 		"rating": 7.3,
 		"type": "Movie",
 		"image": "./images/The_Shape_of_Water.jpg",
-		"video": ""
+		"imdb": "tt5580390"
 	},
 	{
 		"id": 50,
@@ -548,16 +777,21 @@
 		"rating": 8.0,
 		"type": "Series",
 		"image": "./images/The_Umbrella_Academy.jpg",
-		"video": ""
+		"imdb": "tt1312171",
+		"seasons": 3,
+		"episodes": 30,
+		"season1episodes": 10,
+		"season2episodes": 10,
+		"season3episodes": 10
 	},
-	{"id": 51,
+	{
+		"id": 51,
 		"title": "Sleeping Dani",
 		"year": 2025,
 		"genre": "Action, Adventure, Comedy",
 		"director": "Dani gen",
 		"rating": 4.0,
-		"type": "Series",
-		"image": "./images/Sleeping_Dani.jpg",
-		"video": ""
+		"type": "Movie",
+		"image": "./images/Sleeping_Dani.jpg"
 	}
 ]
