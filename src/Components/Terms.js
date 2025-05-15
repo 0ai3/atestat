@@ -12,10 +12,15 @@ function Terms() {
 				</p>
 				<div className="space-y-4">
 					<div className="bg-gray-800 p-4 rounded-lg shadow">
-						<p>✅ Use the service for personal, non-commercial purposes only.</p>
+						<p>
+							✅ Use the service for personal, non-commercial purposes only.
+						</p>
 					</div>
 					<div className="bg-gray-800 p-4 rounded-lg shadow">
-						<p>🚫 Do not attempt to copy or redistribute content without permission.</p>
+						<p>
+							🚫 Do not attempt to copy or redistribute content without
+							permission.
+						</p>
 					</div>
 					<div className="bg-gray-800 p-4 rounded-lg shadow">
 						<p>📜 We reserve the right to update these terms at any time.</p>

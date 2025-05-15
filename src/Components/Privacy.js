@@ -8,14 +8,20 @@ function Privacy() {
 					Privacy Policy
 				</h1>
 				<p className="mb-6 text-lg leading-relaxed text-gray-300">
-					We value your privacy. This document outlines how Streamly handles your data and protects your information.
+					We value your privacy. This document outlines how Streamly handles
+					your data and protects your information.
 				</p>
 				<div className="space-y-4">
 					<div className="bg-gray-800 p-4 rounded-lg shadow">
-						<p>🔒 We do not share your personal information with third parties.</p>
+						<p>
+							🔒 We do not share your personal information with third parties.
+						</p>
 					</div>
 					<div className="bg-gray-800 p-4 rounded-lg shadow">
-						<p>🛡️ All data is stored securely and used solely to enhance your experience.</p>
+						<p>
+							🛡️ All data is stored securely and used solely to enhance your
+							experience.
+						</p>
 					</div>
 					<div className="bg-gray-800 p-4 rounded-lg shadow">
 						<p>
@@ -25,7 +31,8 @@ function Privacy() {
 								className="text-blue-400 underline hover:text-blue-300"
 							>
 								privacy@streamly.com
-							</a>.
+							</a>
+							.
 						</p>
 					</div>
 				</div>

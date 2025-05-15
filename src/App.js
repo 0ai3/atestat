@@ -15,6 +15,8 @@ import Series from "./Components/Series";
 import NotFound from "./Components/NotFound";
 import Privacy from "./Components/Privacy";
 import Terms from "./Components/Terms";
+import Dani from "./Components/Dani";
+import Popovici from "./Components/Popovici";
 
 function App() {
   return (
@@ -34,6 +36,8 @@ function App() {
             <Route path="profile" element={<Profile/>} />
             <Route path="favorites" element={<Favourites />} />
             <Route path="trending" element={<Trending />} />
+            <Route path="/51" element={<Dani />} />
+            <Route path="/52" element={<Popovici />} />
             <Route path=":id" element={<Video/>}/>
             <Route path="404" element={<NotFound />} />
             <Route path="*" element={<NotFound />} />

@@ -348,17 +348,26 @@ function Nav() {
 
 						<ul className="flex justify-center space-x-6 mt-3 text-sm">
 							<li>
-								<Link to="/about" className="hover:text-purple-400 transition-colors">
+								<Link
+									to="/about"
+									className="hover:text-purple-400 transition-colors"
+								>
 									About
 								</Link>
 							</li>
 							<li>
-								<Link to="/privacy" className="hover:text-purple-400 transition-colors">
+								<Link
+									to="/privacy"
+									className="hover:text-purple-400 transition-colors"
+								>
 									Privacy
 								</Link>
 							</li>
 							<li>
-								<Link to="/terms" className="hover:text-purple-400 transition-colors">
+								<Link
+									to="/terms"
+									className="hover:text-purple-400 transition-colors"
+								>
 									Terms
 								</Link>
 							</li>

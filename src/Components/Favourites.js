@@ -6,7 +6,7 @@ import Card from "./Card";
 const Favourites = () => {
 	const [favourites, setFavourites] = useState([]);
 	const [loading, setLoading] = useState(true);
-    const [arr, setArr] = useState([]);
+	const [arr, setArr] = useState([]);
 	useEffect(() => {
 		fetch("/arr.json")
 			.then((response) => response.json())
@@ -50,28 +50,30 @@ const Favourites = () => {
 		return <div className="no-favourites">No favourites added yet</div>;
 	}
 
-    return (
-        <div className="container mx-auto p-4 mb-20">
-            <h2 className="text-2xl font-bold mb-4 text-center">Your Favourites</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                {favourites.map((favId) =>
-                    arr.filter(item => item.id === favId).map((item) => (
-                        <Card
-                            key={item.id}
-                            id={item.id}
-                            image={item.image}
-                            title={item.title}
-                            year={item.year}
-                            rating={item.rating}
-                            genre={item.genre}
-                            director={item.director}
-                            onButtonClick={() => {}}
-                        />
-                    ))
-                )}
-            </div>
-        </div>
-    );
+	return (
+		<div className="container mx-auto p-4 mb-20">
+			<h2 className="text-2xl font-bold mb-4 text-center">Your Favourites</h2>
+			<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+				{favourites.map((favId) =>
+					arr
+						.filter((item) => item.id === favId)
+						.map((item) => (
+							<Card
+								key={item.id}
+								id={item.id}
+								image={item.image}
+								title={item.title}
+								year={item.year}
+								rating={item.rating}
+								genre={item.genre}
+								director={item.director}
+								onButtonClick={() => {}}
+							/>
+						))
+				)}
+			</div>
+		</div>
+	);
 };
 
 export default Favourites;

@@ -793,5 +793,15 @@
 		"rating": 4.0,
 		"type": "Movie",
 		"image": "./images/Sleeping_Dani.jpg"
+	},
+	{
+		"id":52,
+		"title":"David Popovici",
+		"year":2025,
+		"genre": "Action",
+		"director": "Nu vreti sa stiti",
+		"rating": 10.0,
+		"type": "Movie",
+		"image": "./images/David_Popovici.jpg"
 	}
 ]
