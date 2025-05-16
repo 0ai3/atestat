@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 
 function VideoPage() {
 	const [videos, setVideos] = useState([]);
@@ -121,9 +121,9 @@ function VideoPage() {
 				<h2 className="text-xl font-semibold mb-2">More like this</h2>
 				<div className="mb-20 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
 					{recommendedVideos.slice(0, 8).map((v) => (
-						<a
+						<Link
 							key={v.id}
-							href={`/${v.id}`}
+							to={`/${v.id}`}
 							className="bg-gray-800 p-2 rounded hover:bg-gray-700 transition"
 						>
 							<img
@@ -132,7 +132,7 @@ function VideoPage() {
 								className="w-full h-32 object-cover mb-2 rounded"
 							/>
 							<h3 className="text-sm font-medium">{v.title}</h3>
-						</a>
+						</Link>
 					))}
 				</div>
 			</div>

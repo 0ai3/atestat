@@ -1,4 +1,5 @@
 import { useRef, useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function VideoPage() {
 	const [showVideo, setShowVideo] = useState(false);
@@ -15,22 +16,22 @@ function VideoPage() {
 	const recommendedVideos = [
 		{
 			id: 1,
-			image: "/Images/Interstellar.jpg",
+			image: "/images/Interstellar.jpg",
 			title: "Interstellar",
 		},
 		{
 			id: 2,
-			image: "/Images/Inception.jpg",
+			image: "/images/Inception.jpg",
 			title: "Inception",
 		},
 		{
 			id: 3,
-			image: "/Images/Joker.jpg",
+			image: "/images/Joker.jpg",
 			title: "Joker",
 		},
 		{
 			id: 4,
-			image: "/Images/Gladiator.jpg",
+			image: "/images/Gladiator.jpg",
 			title: "Gladiator",
 		},
 	];
@@ -228,7 +229,7 @@ function VideoPage() {
 								</g>
 							</svg>
 							<img
-								src="/Images/thumbnail.jpg"
+								src="./images/thumbnail.jpg"
 								alt="Thumbnail"
 								className="w-full h-full object-cover rounded-lg shadow-lg opacity-80"
 							/>
@@ -403,7 +404,8 @@ function VideoPage() {
 					<h3 className="text-xl font-semibold mb-4">Recommended Videos</h3>
 					<div className="grid grid-cols-2 md:grid-cols-4 mb-20 gap-4">
 						{recommendedVideos.map((rec) => (
-							<div
+							<Link
+								to={`/${rec.id}`}
 								key={rec.id}
 								className="bg-gray-800 p-2 rounded-lg hover:bg-gray-700 transition"
 							>
@@ -415,7 +417,7 @@ function VideoPage() {
 								<h4 className="mt-2 text-sm font-semibold text-white">
 									{rec.title}
 								</h4>
-							</div>
+							</Link>
 						))}
 					</div>
 				</div>

@@ -1,4 +1,5 @@
 import { useRef, useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function VideoPage() {
     const [showVideo, setShowVideo] = useState(false);
@@ -15,36 +16,35 @@ function VideoPage() {
     const recommendedVideos = [
         {
             id: 1,
-            image: "/Images/Interstellar.jpg",
+            image: "/images/Interstellar.jpg",
             title: "Interstellar",
         },
         {
             id: 2,
-            image: "/Images/Inception.jpg",
+            image: "/images/Inception.jpg",
             title: "Inception",
         },
         {
             id: 3,
-            image: "/Images/Joker.jpg",
+            image: "/images/Joker.jpg",
             title: "Joker",
         },
         {
             id: 4,
-            image: "/Images/Gladiator.jpg",
+            image: "/images/Gladiator.jpg",
             title: "Gladiator",
         },
     ];
     const video = {
-       
-		"id":52,
-		"title":"David Popovici",
-		"year":2025,
-		"genre": "Action",
-		"director": "Nu vreti sa stiti",
-		"rating": 10.0,
-		"type": "Movie",
-		"image": "./images/David_Popovici.jpg"
-	
+       id: 52,
+       title: "David Popovici",
+       year: 2025,
+       genre: "Action",
+       director: "Nu vreti sa stiti",
+       rating: 10.0,
+       type: "Movie",
+       image: "./images/Popovici_Poster.jpg"
+
     };
 
     const adLinks = [
@@ -230,7 +230,7 @@ function VideoPage() {
                                 </g>
                             </svg>
                             <img
-                                src="/Images/Popovici.jpeg"
+                                src="/images/popovici.jpeg"
                                 alt="Thumbnail"
                                 className="w-full h-full object-cover rounded-lg shadow-lg opacity-80"
                             />
@@ -405,7 +405,8 @@ function VideoPage() {
                     <h3 className="text-xl font-semibold mb-4">Recommended Videos</h3>
                     <div className="grid grid-cols-2 md:grid-cols-4 mb-20 gap-4">
                         {recommendedVideos.map((rec) => (
-                            <div
+                            <Link
+                                to={`/${rec.id}`}
                                 key={rec.id}
                                 className="bg-gray-800 p-2 rounded-lg hover:bg-gray-700 transition"
                             >
@@ -417,7 +418,7 @@ function VideoPage() {
                                 <h4 className="mt-2 text-sm font-semibold text-white">
                                     {rec.title}
                                 </h4>
-                            </div>
+                            </Link>
                         ))}
                     </div>
                 </div>
